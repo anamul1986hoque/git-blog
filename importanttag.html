@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, footer {
+            background: #f3f3f3;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        img {
+            width: 150px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Practice Page</h1>
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#lists">Lists</a> |
+            <a href="#table">Table</a> |
+            <a href="#form">Form</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About HTML</h2>
+            <p><strong>HTML</strong> stands for <em>HyperText Markup Language</em>. It is used to structure web pages.</p>
+            <p>This is a new line <br> using the &lt;br&gt; tag.</p>
+            <p>Example of <mark>highlighted text</mark> and <small>small text</small>.</p>
+            <img src="https://via.placeholder.com/150" alt="Sample Image">
+            <p><a href="https://www.w3schools.com" target="_blank">Learn HTML on W3Schools</a></p>
+        </section>
+
+        <section id="lists">
+            <h2>Lists Example</h2>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <h3>Ordered List</h3>
+            <ol>
+                <li>Plan</li>
+                <li>Design</li>
+                <li>Develop</li>
+            </ol>
+        </section>
+
+        <section id="table">
+            <h2>Table Example</h2>
+            <table>
+                <caption>My Marksheet</caption>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                </tr>
+                <tr>
+                    <td>Math</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>90</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="form">
+            <h2>Contact Form</h2>
+            <form action="#">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 My Practice Page | Built with ❤️ using HTML</p>
+    </footer>
+
+</body>
+</html>
